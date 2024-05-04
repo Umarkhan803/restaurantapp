@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .MenuTxt {
+        text-align: center;
+        margin: 30px 0px;
+      }
+      .food-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .food-card {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        width: 340px;
+        margin: 20px;
+        border: 15px solid #fff;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+      }
+      img {
+        height: 275px;
+        width: 275px;
+      }
+      a {
+        text-decoration: none;
+        color: deeppink;
+        font-size: 18px;
+      }
+      .View-Btn {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: deeppink;
+        border: none;
+        margin: 10px 0;
+        outline: none;
+        border-radius: 5px;
+        transition: 0.4s;
+      }
+      .View-Btn:hover{
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="menu" id="menu">
+      <div class="MenuTxt">
+        <h3 class="about">Our <span class="A">M</span>enu</h3>
+        <hr class="usline" />
+        <p class="line1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beata
+        </p>
+      </div>
+      <div class="food-box">
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/img1.jpg" />
+            </div>
+            <h3 class="food-iteam">Ham Burger</h3>
+          </a>
+        </div>
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/food1.jpg" />
+            </div>
+            <h3 class="food-iteam">Chicken</h3>
+          </a>
+        </div>
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/food2.jpg" />
+            </div>
+            <h3 class="food-iteam">Pizza</h3>
+          </a>
+        </div>
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/food3.jpg" />
+            </div>
+            <h3 class="food-iteam">Biryani</h3>
+          </a>
+        </div>
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/resturent2.jpg" />
+            </div>
+            <h3 class="food-iteam">Fish fry</h3>
+          </a>
+        </div>
+        <div class="food-card">
+          <a class="itm" href="#">
+            <div class="imgbox">
+              <img class="img " src="images/resturent3.jpg" />
+            </div>
+            <h3 class="food-iteam">Noodles</h3>
+          </a>
+        </div>
+      </div>
+      <input type="button" class="View-Btn" value="View More" />
+    </section>
+  </body>
+</html>

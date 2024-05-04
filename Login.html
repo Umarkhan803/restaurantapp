@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/bg3.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgb(0, 0, 0);
+        border-radius: 15px;
+        width: 420px;
+        padding: 30px 40px;
+    }
+
+    .Main h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin: 10px 0px;
+        position: relative;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        color: white;
+        background: transparent;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        outline: none;
+        border-radius: 40px;
+        font-size: 14px;
+        padding: 20px 45px 20px 20px;
+    }
+
+    .input-box input::placeholder {
+        color: rgba(0, 0, 0, 0.842);
+    }
+
+    .input-box img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        color: #000000;
+    }
+
+    .Main .remember {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: 15px 0 15px;
+    }
+
+    .remember a {
+        color: #0f0f0f;
+        text-decoration: none;
+    }
+
+    .remember label input {
+        accent-color: #fff;
+        margin-top: 3px;
+    }
+
+    .Submit-Btn {
+        height: 45px;
+        width: 100%;
+        border: none;
+        border-radius: 40px;
+        background: #fff;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        font-weight: 600;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        outline: 3px solid deeppink;
+        outline-offset: -5px;
+        transition: 0.3s;
+    }
+
+    .Submit-Btn:hover {
+        outline-offset: 3px;
+
+    }
+
+    .register {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 14.5px;
+    }
+
+    .register a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .register label,
+    a {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <form class="Main" action="index.html" method="post" onsubmit=" return valid()">
+        <h2>Log in</h2>
+        <div class="input-box">
+            <input type="text" placeholder="User Name" autocomplete="off" name="" id="username" />
+            <img src="images/user.png" class="user" alt="" />
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" autocomplete="off" name="" id="password" />
+            <img src="images/pass.png" alt="" />
+        </div>
+        <label for="" class="Rem-box">
+            <input type="checkbox" name="" id=""> Remember Me
+        </label>
+        <input type="submit" class="Submit-Btn" value="Log in" />
+        <div class="register">
+            <label for=""> Don't have an account? </label><a href="#">Register </a>
+        </div>
+    </form>
+</body>
+
+</html>
